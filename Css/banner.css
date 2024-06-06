@@ -1,0 +1,88 @@
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* adjust height to your needs */
+    /* overflow: hidden; */
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: transform 0.5s ease; /* Add transition for smooth sliding effect */
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+ 
+  
+  
+  /* Add some basic styling to make the buttons look like buttons */
+
+
+  .bannerOne{
+    display: flex;
+    margin-top: 50px;
+  }
+  .bannerOne-desc{
+    margin: 20px;
+  }
+
+  .bannerOne-desc h1{
+    font-weight: 700;
+    font-size: 60px;
+  }
+  .bannerOne-desc p{
+    
+    font-size: 18px;
+  }
+
+  .bannerOneBtn{
+    display: flex;
+    gap: 10px;
+  }
+  .donatebtn{
+    background-color: #FF5959;
+    padding: 15px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .videobtn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .banner-img{
+    position: relative;
+    margin: 20px;
+  }
+  .banner-person{
+    position: absolute;
+    
+  }
+  .banner-person {
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    bottom: 0px;
+  }
+  .banner-person img{
+    
+    height: 430px;
+    margin-left: 180px;
+  }
+  .banner-bg img{
+    width: 700px;
+    height: 350px;
+    padding: 20px;
+  }
