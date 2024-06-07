@@ -134,6 +134,30 @@
 
 /* Get Update Section End */
 
+
+/* Footer Section Start */
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+footer h1{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+footer p{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Footer Section End */
+
 /* Media Query Section for small Device */
 @media only screen and (min-width: 200px) and (max-width: 576px) {
   /* Donate Today Section Start */
