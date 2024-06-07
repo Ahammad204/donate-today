@@ -1,146 +1,137 @@
-
 .banner {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* adjust height to your needs */
-    /* overflow: hidden; */
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    transition: transform 0.5s ease; /* Add transition for smooth sliding effect */
-  }
-  
-  .slide.active {
-    display: block;
-  }
-  
- 
-  
-  
-  /* Add some basic styling to make the buttons look like buttons */
+  position: relative;
+  width: 100%;
+  height: 100vh; /* adjust height to your needs */
+  /* overflow: hidden; */
+}
 
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: transform 0.5s ease; /* Add transition for smooth sliding effect */
+}
 
-  .bannerOne{
-    display: flex;
-    margin-top: 50px;
-    
-  }
-  .bannerOne-desc{
-    margin: 20px;
-  }
+.slide.active {
+  display: block;
+}
 
-  .bannerOne-desc h1{
-    font-weight: 700;
-    font-size: 60px;
-    margin-bottom: 30px;
-  }
-  .bannerOne-desc p{
-    
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+/* Add some basic styling to make the buttons look like buttons */
 
-  .bannerOneBtn{
-    display: flex;
-    gap: 10px;
-  }
-  .donatebtn{
-    background-color: #FF5959;
-    padding: 15px;
-    outline: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-  }
-  .videobtn{
-    background-color: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
+.bannerOne {
+  display: flex;
+  margin-top: 50px;
+}
+.bannerOne-desc {
+  margin: 20px;
+}
 
-  .banner-img{
-    position: relative;
-    margin: 20px;
-  }
-  .banner-person{
-    position: absolute;
-    
-  }
-  .banner-person {
-    width: 100%;
-    position: absolute;
-    z-index: 50;
-    bottom: 0px;
-  }
-  .banner-person img{
-    
-    height: 430px;
-    margin-left: 180px;
-  }
-  .banner-bg img{
-    width: 700px;
-    height: 350px;
-    padding: 20px;
-  }
+.bannerOne-desc h1 {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.bannerOne-desc p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-  /* Banner Two */
+.bannerOneBtn {
+  display: flex;
+  gap: 10px;
+}
+.donatebtn {
+  background-color: var(--primary-color);
+  padding: 15px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.videobtn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 
-  .bannerTwo{
-    background-image: url(../Resources/Banner/bannerTwo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-    color: #fff;
-    
-  }
+.banner-img {
+  position: relative;
+  margin: 20px;
+}
+.banner-person {
+  position: absolute;
+}
+.banner-person {
+  width: 100%;
+  position: absolute;
+  z-index: 50;
+  bottom: 0px;
+}
+.banner-person img {
+  height: 430px;
+  margin-left: 180px;
+}
+.banner-bg img {
+  width: 700px;
+  height: 350px;
+  padding: 20px;
+}
 
+/* Banner Two */
+
+.bannerTwo {
+  background-image: url(../Resources/Banner/bannerTwo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
 
 .overlay-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 100%; 
-    height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
-.bannerTwo-desc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    z-index: 5;
+.bannerTwo-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 5;
 }
-.bannerTwo-desc h1{
-    font-weight: 700;
-    font-size: 40px;
+.bannerTwo-desc h1 {
+  font-weight: 700;
+  font-size: 40px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 576px){
- 
-  .bannerOne{
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .banner {
+    margin-bottom: 80px;
+  }
+  .bannerOne {
     flex-direction: column;
   }
-.banner-img{
+  .banner-img {
     margin-top: 300px;
-}
-  .banner-person img{
+  }
+  .banner-person img {
     margin-left: 0px;
   }
-  .banner-bg img{
+  .banner-bg img {
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -148,20 +139,16 @@
 
   /* Banner Two */
 
-  .bannerTwo{
+  .bannerTwo {
     background-size: contain; /* or auto */
-   
   }
 
-
-
-.bannerTwo-desc{
-
+  .bannerTwo-desc {
     left: 11%;
     z-index: 5;
-}
-.bannerTwo-desc h1{
+  }
+  .bannerTwo-desc h1 {
     font-weight: 700;
     font-size: 40px;
-}
+  }
 }
