@@ -130,9 +130,10 @@
   }
   .banner-person img {
     margin-left: 0px;
+    width: 90%;
   }
   .banner-bg img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding: 20px;
   }
